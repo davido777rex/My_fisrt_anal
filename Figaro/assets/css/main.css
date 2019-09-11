@@ -1,0 +1,212 @@
+@font-face {
+    font-family: 'maincra';
+    src: url('../fonts/mincraft/Mojang-Regular.ttf');
+}
+
+a {
+    text-decoration: none;
+    color: #461220;
+}
+
+a:hover {
+    opacity: 0.70;
+}
+
+.address {
+    font-weight: bold;
+    color: #461220;
+    font-size: 1.2em;
+    margin-top: 1em;
+    display: inline-block;
+}
+
+.title {
+    text-transform: capitalize;
+    text-align: center;
+    color: #461220;
+}
+
+.container {
+    background: #C6FFDD;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #f7797d, #FBD786, #C6FFDD);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #f7797d, #FBD786, #C6FFDD);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paragraph {
+    text-align: justify;
+    line-height: 1.8em;
+    font-weight: 50;
+    color: #03242d;
+}
+
+.table {
+    width: 100%;
+    border-spacing: 0;
+    color: #2d3228;
+}
+
+.table td,
+.table th {
+    padding: 1em;
+    text-align: left
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: rgb(250, 233, 192);
+}
+
+.content {
+    max-width: 960px;
+    width: 100%;
+    height: 80vh;
+    background-color: white;
+    -webkit-box-shadow: 6px 6px 20px 3px rgba(0, 0, 0, 0.37);
+    -moz-box-shadow: 6px 6px 20px 3px rgba(0, 0, 0, 0.37);
+    box-shadow: 6px 6px 20px 3px rgba(0, 0, 0, 0.37);
+    border-radius: 6px;
+    position: relative;
+    overflow: auto;
+}
+
+.main-image {
+    float: initial;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.content {
+    padding: 1em;
+}
+
+td {
+    display: block;
+    width: 100%;
+}
+
+td:nth-of-type(1) {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #6e2539;
+}
+
+th {
+    display: none
+}
+
+.action {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+.close {
+    height: 40px;
+    width: 40px;
+    color: white;
+    border-radius: 50%;
+    background-color: #6e2539;
+    display: inline-block;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close>span {
+    padding-left: 0.2em
+}
+
+.fa-lemon {
+    color: #f7797d
+}
+
+html {
+    font-family: 'maincra';
+    word-spacing: 10px;
+}
+
+.red {
+    height: 200px;
+    width: 100px;
+    background-color: rebeccapurple;
+}
+
+.btn-flat {
+    height: 100px;
+    width: 100px;
+    background-color: #9d5c63;
+}
+
+#boton-pago {
+    background-color: yellow;
+    color: rgba(255, 0, 0, 0.816);
+}
+
+td {
+    border: solid 0px;
+}
+
+
+/*css kk*/
+
+.title-item {
+    /* border-bottom-style: solid;
+border-width: 2px;
+border-color: #6e2539; */
+    border-bottom: solid 2px #6e2539;
+    padding-bottom: 0.5em;
+    /*ANTES ERA 1, CODE01*/
+    /* padding: arriba derecha abajo izquierda
+padding: arriba/abajo derecha/izquierda */
+    font-size: 2em;
+}
+
+.position {
+    background-color: #6e2539;
+    color: white;
+    padding: 10px;
+    /* shorthand propierties */
+    border-radius: 6px;
+    margin-right: 0.5em;
+    /* DOS MODIFICACIONES AÑADIDAS FUEARA DE "CLASE"  CODE 01 */
+    display: inline-block;
+    margin-bottom: 0.5em
+}
+
+@media (min-height:550px) {
+    .content {
+        height: 500px;
+    }
+}
+
+@media (min-width:662px) {
+    th {
+        display: table-cell;
+    }
+    td {
+        width: auto;
+        display: table-cell;
+    }
+    td:nth-of-type(1) {
+        font-size: 1em;
+    }
+    .content {
+        padding: 1.8em;
+    }
+    .main-image {
+        float: left;
+        margin-right: 1em;
+        height: 300px;
+    }
+}
