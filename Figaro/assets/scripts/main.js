@@ -10,10 +10,23 @@ close.forEach(function(recorrer) {
 
         setTimeout(() => {
             location.href = "../index.html";
-        }, 700);
+        }, 600);
     })
 })
 
+let segunda = document.querySelectorAll(".segundaTarjeta");
+segunda.forEach(function(segundear) {
+    segundear.addEventListener("click", function(ev) {
+        ev.preventDefault();
+        console.log(content);
+        content.classList.remove("rollIn")
+        content.classList.add("rollOut")
+
+        setTimeout(() => {
+            location.href = "./bichosCrossing/perroGuitarra.html";
+        }, 600);
+    })
+})
 
 
 
