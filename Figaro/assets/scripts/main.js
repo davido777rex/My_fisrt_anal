@@ -1,4 +1,5 @@
-let close = document.querySelectorAll(".close");
+let close = document.querySelectorAll(".close, .segundaTarjeta");
+
 let content = document.querySelector(".content")
 close.forEach(function(recorrer) {
 
@@ -9,25 +10,10 @@ close.forEach(function(recorrer) {
         content.classList.add("rollOut")
 
         setTimeout(() => {
-            location.href = "../index.html";
+            location.href = recorrer.getAttribute("href");
         }, 600);
     })
 })
-
-let segunda = document.querySelectorAll(".segundaTarjeta");
-segunda.forEach(function(segundear) {
-    segundear.addEventListener("click", function(ev) {
-        ev.preventDefault();
-        console.log(content);
-        content.classList.remove("rollIn")
-        content.classList.add("rollOut")
-
-        setTimeout(() => {
-            location.href = "./bichosCrossing/perroGuitarra.html";
-        }, 600);
-    })
-})
-
 
 
 // let iconos = document.querySelectorAll("i");
